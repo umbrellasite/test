@@ -1,0 +1,423 @@
+/* Header */
+header .header-boutton.active {
+    height: 100vh;
+    display: flex;
+    transition: all 2s;
+}
+
+/* Menu burger */
+.burger {
+    display: none; 
+    width: 38px;
+    height: 3.8vh;
+    padding: .5vh 0;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+    .barre {
+        display: block;
+        width: 25px;
+        height: 3px;
+        background-color: #333333e0;
+        border-radius: 3px;
+        transition: all 0.3s ease-in-out;
+    }
+.burger.open .barre:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+}
+.burger.open .barre:nth-child(2) {
+    opacity: 0; 
+}
+.burger.open .barre:nth-child(3) {
+    transform: translateY(-5px) rotate(-45deg);
+}
+
+
+
+/* Normal desktop :1200px. */
+@media (min-width: 1200px) and (max-width: 1900px) {
+    /* Section Hero */
+            .hero .hero-gauche h1 .hero-texte-cache{
+                display: block;
+            }
+}
+
+
+/* Normal desktop :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+    /* Header */
+    header .header-boutton{
+        width: 70%;
+    }
+        /* Section Hero */
+            .hero .hero-gauche h1 .hero-texte-cache{
+                display: block;
+            }
+        /* Comment faire? */
+                .aPropos .comment .contenu .comment-gauche, .aPropos .comment .contenu .comment-droite{
+                width: 40%;
+            }
+        /* Confiance */
+                .aPropos .confiance .slider-container .listeLogo  img {
+                    width: 200px; 
+                }
+    /* Footer */
+    footer .colonne:last-child{
+        padding-top: 6%;
+    }
+
+    /* Formation */
+        .recherches #recherche{
+            height: 5vh;        
+        }
+
+    /* Detail */
+    .detail .contenu .description .pre-requis{
+        display: none;
+    }
+        
+}   
+
+ 
+/* Tablet desktop :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+    h2{
+        font-size: 2rem;
+    }
+    header .header-boutton{
+        width: 70%;
+        z-index: 999;
+    }
+    header .header-boutton *{
+        font-size: 1.1rem;
+    }
+
+    /* Sectio Hero */
+        .hero-gauche h1{
+            font-size: 2rem;
+        }
+
+    /* A propos */
+                    .aPropos .contenu .aPropos-droite .statistique .boite p:first-child{ 
+                        font-size: 1.8rem;
+                    }
+                    .aPropos .contenu .aPropos-droite .statistique .boite p:last-child{ 
+                        font-size: 1.6rem;
+                    }
+
+        /* Objectifs */
+                .aPropos .objectif .contenu .objectifs .cache-resume{
+                    display: none;
+                }
+
+        /* Comment faire? */
+                .aPropos .comment .contenu .comment-gauche, .aPropos .comment .contenu .comment-droite{
+                width: 90%;
+                margin-top: 4%;
+            }
+
+        /* Confiance */
+                .aPropos .confiance .slider-container .listeLogo  img {
+                    width: 200px; 
+                }
+
+    /* Nous contacter */
+        .contact .contenu .message .groupe label{
+            font-size: 1.2rem;
+        }
+    .contact .contenu .message textarea{
+        width: 94%;
+        height: 100px;
+        
+    }
+
+
+
+    /* Footer */
+    footer .colonne{
+        width: 30%;
+        margin-bottom: 1%;
+
+    }
+    footer .colonne:last-child{
+        width: 100%;
+        padding-top: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+    /* Formation */
+        .recherches #recherche{
+            height: 5vh;
+            
+        }
+/* Login */
+            #fond .seConnecter .contenu .gauche h1 {
+                font-size: 2.5rem;
+            }
+            #fond .seConnecter .contenu .gauche p {
+                font-size: 1rem;
+            }
+            #fond .seConnecter .contenu .gauche .btn-inscription {
+                font-size: 1rem;
+            }
+            #fond .seConnecter .contenu .gauche p .court {
+                display: none;
+            }
+        #fond .seConnecter .contenu .droite h2 {
+            font-size: 1.2rem;
+        }
+            #fond .seConnecter .contenu .droite form #liste {
+                font-size: .8rem;
+            }
+                #fond .seConnecter .contenu .droite form .groupe input {
+                    font-size: .8rem;
+                }
+                #fond .seConnecter .contenu .droite form .bouton .btn-seConnecter {
+                    font-size: .8rem;
+                }
+                #fond .seConnecter .contenu .droite form .bouton a{
+                    font-size: .6rem;
+                }
+    /* Detail */
+    .detail .contenu .image-formation{
+        height: 35vh;
+    }
+    .detail .contenu .description .pre-requis{
+        display: none;
+    }
+}
+
+ 
+/* small mobile :320px. */
+@media (max-width: 767px) {
+    body{
+        width: 100%;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    /* Header */
+    header{
+        width: 92%;
+        padding: 1.5% 4%;
+    }
+    .burger{
+        display: flex;      
+    }
+    .burger.open .barre:nth-child(1) {
+        transform: translateY(7.5px) rotate(45deg);
+    }
+    .burger.open .barre:nth-child(2) {
+        opacity: 0; 
+    }
+    .burger.open .barre:nth-child(3) {
+        transform: translateY(-7.5px) rotate(-45deg);
+    }
+    header *{
+        font-size: 1.2rem;
+    }
+    header .header-boutton{
+        width: 92%;
+        height: 100vh;
+        padding: 2% 4%;
+        background-color: white;
+        display: none;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: absolute;
+        top: 13vh;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        transition: all 2s ease;
+    }
+        header .header-boutton .navigation{
+            width: 60%;
+            height: auto;
+            margin-bottom: 2%;
+
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+            header .header-boutton .navigation a{
+                width: 80%;
+                height: auto;
+                padding: 4% 4%;
+            }
+
+    /* Sectio Hero */
+    .hero-droite{
+        display: none;
+    }
+
+    .hero-gauche{
+        width: 100%;
+        padding: 2%;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+        .hero-gauche h1{
+            font-size: 1.8rem;
+        }
+
+    /* A propos */
+        .aPropos .contenu .aPropos-gauche{
+            width: 80%;
+            opacity: .15;
+            position: absolute ;
+            z-index: -999;      
+        }
+
+        .aPropos .contenu .aPropos-droite{
+            width: 100%;
+        }
+
+                    .aPropos .contenu .aPropos-droite .statistique .boite p:first-child{ 
+                        font-size: 1.4rem;
+                    }
+                    .aPropos .contenu .aPropos-droite .statistique .boite p:last-child{ 
+                        font-size: 1.2rem;
+                    }
+
+        /* Objectifs */
+                .aPropos .objectif .contenu .objectifs .cache-resume{
+                    display: none;
+                }
+        /* Comment faire? */
+                .aPropos .comment .contenu .comment-gauche, .aPropos .comment .contenu .comment-droite{
+                width: 90%;
+                margin-top: 4%;
+            }
+        /* Témoignage */
+            .aPropos .temoignage .cartes .temoin{
+                padding: 6% 20%;
+            }
+                .aPropos .temoignage .cartes .temoin img{
+                    display: none;
+                }
+                .aPropos .temoignage .cartes .temoin .texte{
+                    width: 80%;
+                    padding: 6% 10%;
+                }
+                        .aPropos .temoignage .cartes .temoin .texte .profil .poste .entreprise{
+                            line-height: 1.5;
+                        }
+
+        /* Confiance */
+        .aPropos .confiance .slider-container .listeLogo  img {
+            width: 150px; 
+        }
+
+
+        /* Nous contacter */
+        .contact .contenu .message .groupe{
+            width: 100%;
+            margin: 2% 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            align-items: flex-start;
+        }
+        .contact .contenu .message .haut{
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .contact .contenu .message .haut input{
+            width: 90%; 
+            height: 30px;
+        }
+        .contact .contenu .message .groupe label{
+            font-size: 1rem;
+        }
+        .contact .contenu .message textarea{
+            width: 94%;
+            height: 70px;
+        }
+
+    /* Footer */
+    footer *{
+        font-size: 1.05rem;
+    }
+    footer .colonne{
+        width: 32%;
+
+    }
+    footer .colonne:last-child{
+        width: 100%;  
+        padding: 0;  
+        border-top: 1px solid rgba(255, 255, 255, 0.3);
+        margin-top: 4%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    footer .logo{
+        width: 90%;
+        margin-top: 10%;
+    }
+        footer .colonne .social a img{
+            width:90%;
+        }
+    /* Formation */
+        .recherches #recherche{
+            height: 5vh;
+            
+        }
+
+/* Login */
+            #fond .seConnecter .contenu .gauche h1 {
+                font-size: 2.1rem;
+            }
+            #fond .seConnecter .contenu .gauche p {
+                font-size: .9rem;
+            }
+            #fond .seConnecter .contenu .gauche .btn-inscription {
+                font-size: .7rem;
+            }
+            #fond .seConnecter .contenu .gauche p .court {
+                display: none;
+            }
+        #fond .seConnecter .contenu .droite h2 {
+            font-size: 1.1rem;
+        }
+            #fond .seConnecter .contenu .droite form #liste {
+                font-size: .6rem;
+            }
+                #fond .seConnecter .contenu .droite form .groupe input {
+                    font-size: .6rem;
+                }
+                #fond .seConnecter .contenu .droite form .bouton .btn-seConnecter {
+                    font-size: .6rem;
+                }
+                #fond .seConnecter .contenu .droite form .bouton a{
+                    font-size: .4rem;
+                }
+    /* Detail */
+    .detail .contenu .image-formation{
+        display: none;
+    }
+    .detail .contenu .description {
+        width: 80%;
+    }
+    .detail .contenu .description .pre-requis{
+        display: block;
+    }
+
+}
+
+
+
+

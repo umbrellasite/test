@@ -1,0 +1,324 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: '[z] Arista Light';
+    font-size: 1.3rem;
+}
+
+ul{
+    list-style: none;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+input{
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.500);
+    outline: none;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    transition: color 1.5s, font-weigh 1.5s;
+}
+a:hover{
+    color: orange !important;
+    font-weight: 600;
+}
+
+/* --- Styles de base pour les boutons --- */
+.btn-un,
+.btn-deux {
+    padding: 12px 24px;
+    font-family: '[z] Arista';
+    font-size: 1.2rem;
+    color: #ffffff; 
+    border: none;
+    border-radius: 5px; /* Coins légèrement arrondis */
+    cursor: pointer;
+    transition: background-color 1s ease, transform 1s ease;
+}
+
+
+.btn-un {
+    background-color: orange;
+}
+.btn-un:hover {
+    background-color: #1a1818;
+    transform: scale(1.03);
+}
+.btn-deux {
+    background-color: #1a1818;
+}
+.btn-deux:hover {
+    background-color: orange;
+    transform: scale(1.03); 
+}
+.btn-trois {
+    background-color: white;
+}
+.btn-trois:hover {
+    background-color: rgb(2, 2, 2);
+    transform: scale(1.03);
+    color: white;
+}
+
+
+/* Header */
+header{
+    width: 97%;
+    background-color: white;
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.781);
+    padding: 1.5% ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    z-index: 100;
+    top: 0;
+}
+    header .logo{
+        transition: filter 3s;
+    }
+    header .logo:hover{
+        filter: brightness(0);
+        /* filter: brightness(0) invert(1); */
+    }
+        header .header-boutton{
+            width: 60%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+        }
+
+            header .header-boutton .navigation{
+                width: 60%;
+                height: 80%;
+
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+                align-items: center;
+            }
+                header .header-boutton .navigation a{
+                    width: 24%;
+                    height: 65%;
+                    padding: 1% 1%;
+                    font-size: 1.5rem;
+                    text-align: center;
+                    transition: color 1.5s, font-weigh 1.5s;
+                }
+
+                header .header-boutton .navigation a:hover{
+                    color: orange;
+                    font-weight: 600;
+                }
+
+
+.couleur_fond{
+    position: absolute;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    z-index: 500;
+    border: none;
+
+    background-color: rgb(255, 255, 255);
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+    
+    .choix{
+        width: 40%;
+        height: 40vh;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.588);
+        border-radius: 50px;
+        display: none;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        overflow: hidden;
+    }
+ 
+        .choix h2{
+            width: 100%;
+            background-color: #f07d00;
+            margin: 0;
+            padding: 10% 0 8% 0;
+            font-size: 1.8rem;
+            text-align: center;
+        }  
+        .choix .boutonChoix{
+            width: 80%;
+            height: 30%;
+            text-align: center;
+            margin-bottom: 8%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;    
+        }        
+            .choix .boutonChoix button{
+                width: 45%;
+                height: 50px;
+                font-size: 1rem;
+                font-family: '[z] Arista';
+                text-align: center;
+                border: none;
+                border-radius: 20px;
+                transition: font-weight 1.5s, color 1.5s;
+            }
+            .choix .boutonChoix button:hover{   
+                font-weight: 600;
+                color: orange;
+            }
+    .login{
+        width: 30%;
+        height: 60vh;
+        padding: 5%;
+        display: none;
+        border: none;
+        border-radius: 50px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+        flex-direction: column;
+        align-items: center;
+    }
+        .login form{
+            width: 80%;
+            height: 60%;
+            padding: 2%;
+            font-size: 1rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+            .login form .input-group{
+                width: 80%;
+                padding: 2% 0;
+                font-size: 1.2rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
+                .login form .input-group input{
+                    width: 92%;
+                    height: 5vh;
+                    padding: 0 4%;
+                    margin-top: 2%;
+                }
+                .login form .btn-login{
+                    width: 50%;
+                    height: 5vh;
+                    padding: 0 4%;
+                    margin-top: 2%;
+                    border-radius: 10px;
+                    text-align: center;
+                }
+                
+            .login form .form-footer{
+                font-size: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            .login #fermerLogin{
+                font-size: 3rem;
+                position: absolute;
+                top:13vh;
+                right: 33vw;
+                cursor: pointer;
+            }   
+                     
+    .couleur_fond.active{
+        display: flex;
+    }
+    .choix.active{
+        display: flex;
+    }
+    .login.active{
+        display: flex;
+    }
+
+/* Section */
+    h2{
+        width: 100%;
+        margin: 2% 0;
+        font-size: 3rem;
+        text-align: center;
+        transition: color 1.5s, text-shadow 1s;
+    }
+    h2:hover{
+        color: orange;
+        text-shadow: 2px 2px 5px rgb(0, 0, 0);
+    }
+
+/* Footer */
+footer{
+    width: 90%;
+    background-color: black;
+    color: white;
+
+    padding: 2% 5%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items:flex-start;
+    flex-wrap: wrap;
+}
+    footer .colonne{
+        width: auto;
+
+    }
+    footer .colonne:last-child{
+        line-height: 10px;
+        padding-top: 4%;
+
+    }
+        footer .colonne:last-child h3{
+            padding: 2% 0;
+
+        }
+        footer .colonne a{
+            color: white;
+        }
+
+        footer .colonne .logo{
+            filter: brightness(0) invert(1);
+        }
+
+        footer .colonne .social{
+            width: 100%;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+        }
+        footer .colonne .social a{
+            width:20%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 1s;
+        }
+        footer .colonne .social a:hover{
+            transform: translateY(-2px);
+        }
+            footer .colonne p .copyright{
+                font-family: Arial;
+            }
+            footer .colonne p .auteur{
+                    font-size: 1.7rem;
+                    line-height: 0;
+                    font-family: 'Abigaila Signature';
+                }
+

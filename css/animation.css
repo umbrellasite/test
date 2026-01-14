@@ -1,0 +1,11 @@
+
+
+/* L'animation de défilement */
+@keyframes slideAuto {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%); /* On décale de la moitié (car on a doublé les logos) */
+    }
+}

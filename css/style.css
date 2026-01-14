@@ -1,0 +1,710 @@
+:root{
+    --boxOmbreOrange:  0 0 30px rgb(201, 130, 0);
+    --boxOmbreNoir:  0 0 20px rgba(0, 0, 0, 0.497);
+
+    --textOmbreOrange: 2px 2px 5px orange; 
+    --textOmbreNoir: 2px 2px 5px rgb(0, 0, 0);
+
+
+}
+
+header  #utilisateur{
+    display: none;
+}
+.hero{
+    width: 92%;
+    height: 74vh;   
+    background-color: rgba(88, 88, 88, 0.271); 
+    padding: 2% 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+    .hero-gauche{
+        width: 30%;
+        padding: 2%;
+    }
+
+        .hero-gauche h1{
+            width: 100%;
+            line-height: 40px;
+            font-size: 2.5rem;
+            font-weight: 400;
+            margin: 0;
+        }
+            .hero-gauche h1 .texte-logo{
+                font-style: italic;
+                color: orange;
+                transition: text-shadow 1s;
+            }
+            .hero-gauche h1 .texte-logo:hover{
+                text-shadow: 1px 1px 2px black;
+                text-decoration: underline;
+                text-decoration-style: dashed;
+            }
+            .hero .hero-gauche h1 .hero-texte-cache{
+                display: inline;
+            }
+        #recherche{
+            width: 90%;
+            height: 8vh;
+            border: 1px solid rgba(0, 0, 0, 0.274);
+            border-radius: 8px;
+            margin-top: 5%;
+            padding: 0;
+            overflow: hidden;
+
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            flex-wrap: nowrap;
+            
+        }
+            #recherche *{
+                height: 100%;
+                padding: 0;
+                
+            }
+            #recherche input:first-child{
+                width: 100%;
+                padding-left: 4%;
+                font-size: 1.2rem;
+            }
+            #recherche input:last-child{
+                width: 20%;
+                background-color: rgba(0, 0, 0, 0.937);
+                font-size: 1.5rem;
+                transition: font-size 1s, background-color 1.5s;
+            }
+                #recherche input:last-child:hover{
+                    width: 20%;
+                    background-color: orange;
+                    font-size: 1.8rem
+                }
+
+        .hero-droite{
+            width: 60%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+            .hero-droite .image{
+                width: 70%;
+                height: 50vh;
+                background: white url('../img/formation/hero.gif');
+                background-size: 90%;
+                background-repeat: no-repeat;
+                background-position: 20% 50%;
+                border: none;
+                box-shadow: 0 0 20px rgba(0, 0, 0, 0.497);
+                border-radius: 60px;
+                filter: grayscale(100%);
+                transition: box-shadow 1s, filter 1.5s, transform 2s;
+            }
+            .hero-droite .image:hover{
+                box-shadow: 0 0 30px rgb(201, 130, 0);
+                filter: grayscale(0%);
+                transform: scale(1.1);
+            }
+
+/* A propos */
+
+.aPropos{
+    width: 92%;
+    height: auto;
+    padding: 2% 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+
+    .aPropos .contenu{
+        width: 92%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+    }
+        .aPropos .contenu .aPropos-gauche{
+            width: 35%;
+            height: 50vh;
+            background: url('../img/formation/aPropos.gif');
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            transition: filter 2s;
+        }
+        .aPropos .contenu .aPropos-gauche:hover{
+            filter: saturate(3);
+        }
+
+        .aPropos .contenu .aPropos-droite{
+            width: 60%;
+        }
+            .aPropos .contenu .aPropos-droite h3{
+               color: black;
+               font-size: 1.8rem;
+            }
+            .aPropos .contenu .aPropos-droite p{
+               text-align: justify;
+            }
+            .aPropos .contenu .aPropos-droite p .texte-logo{
+               color: orange;
+               font-size: 1.5rem;
+               font-style: italic;
+            }
+                .aPropos .contenu .aPropos-droite p .type-personne{
+                    font-style: italic;
+                    transition: color 1s, font-weight 1s;
+                }
+                .aPropos .contenu .aPropos-droite p .type-personne:hover{
+                    color: orange;
+                    font-weight: 600;
+                }
+            .aPropos .contenu .aPropos-droite .statistique{
+               width: 92%;
+               padding: 2% 4%;
+
+               display: flex;
+               flex-direction: row;
+               justify-content: space-between;
+               align-items:flex-start;
+               flex-wrap: wrap;
+
+            }
+                .aPropos .contenu .aPropos-droite .statistique .boite{
+                    width: 25%;
+                    padding: 2%;
+                    background-color: rgba(0, 0, 0, 0.95);
+                    border-radius: 25px;
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    transition: background-color 1.5s, box-shadow 1.5s;
+                }
+                .aPropos .contenu .aPropos-droite .statistique .boite:hover{
+                    background-color: orange;
+                    box-shadow: 0 0 20px black;
+                }
+                    .aPropos .contenu .aPropos-droite .statistique .boite p:first-child{ 
+                        margin: 0;
+                        padding: 0;
+                        font-size: 2rem;
+                        color: white;
+                    }
+                    .aPropos .contenu .aPropos-droite .statistique .boite p:last-child{ 
+                        margin: 0;
+                        padding: 0;
+                        font-size: 1.8rem;
+                        color: white;
+                    }
+    /* Objectif */
+    .aPropos .objectif{
+        width: 100%;
+        padding: 3% 0;
+
+    }
+        .aPropos .objectif .contenu{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+        }
+            .aPropos .objectif .contenu .objectifs{
+                width: 25%;
+                padding: 0% 2%;
+                border: none;
+                border-radius: 20px;
+                box-shadow: 0 0 5px black;
+                font-size: 1.5rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                transition: box-shadow 2s;
+
+            }
+            .aPropos .objectif .contenu .objectifs:hover{
+                width: 100%;
+                justify-content: space-around;
+                box-shadow: 0 0 20px orange;
+                border: 1px solid rgba(0, 0, 0, 0.395);
+            }
+            .aPropos .objectif .contenu:hover .objectifs:not(:hover){
+                display: none;
+            }
+                .aPropos .objectif .contenu .objectifs span{
+                    width: 10%;
+                    font-size: 5rem;
+                    margin: 0;
+                    text-shadow: 2px 2px 5px orange; 
+                }
+                .aPropos .objectif .contenu .objectifs:hover span{
+                    display: none;
+                }
+                .aPropos .objectif .contenu:hover .objectifs:not(:hover) span{
+                    display: none;
+                }
+                .aPropos .objectif .contenu .objectifs p{
+                    width: 80%;
+                    margin: 0%;
+                    padding:  5% 10%;
+
+                }
+                .aPropos .objectif .contenu .objectifs .cache-resume{
+                    display: block;
+                }
+                .aPropos .objectif .contenu .objectifs:hover .cache-resume{
+                    display: none;
+                }
+                .aPropos .objectif .contenu .objectifs .affiche-objectif{
+                    display: none;
+                }
+                .aPropos .objectif .contenu .objectifs:hover .affiche-objectif{
+                    display: block;
+                    text-align: center;
+                }
+    /* Comment faire? */
+    .aPropos .comment{
+        width: 100%;
+        padding: 3% 0;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    
+
+    }
+        .aPropos .comment .contenu{
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        
+        }
+            .aPropos .comment .contenu .comment-gauche, .aPropos .comment .contenu .comment-droite{
+                width: 34%;
+                border-radius: 10px;
+                border: none;
+                margin: 0;
+                margin-top: 1%;
+                padding: 0;
+                box-shadow: var(--boxOmbreNoir);
+                overflow: hidden;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                transition: box-shadow 1.5s, background-size 1.5s, background-position 1.5s;
+
+            }
+            .aPropos .comment .contenu .comment-gauche:hover, .aPropos .comment .contenu .comment-droite:hover{
+                box-shadow: var(--boxOmbreOrange);
+            }
+            .aPropos .comment .contenu .comment-gauche{
+                background: url('../img/formation/hero.gif');
+                background-size: 190%;
+                background-position: 0% 25%;
+            }
+            .aPropos .comment .contenu .comment-gauche:hover{
+                background-size: 220%;
+                background-position: 10% 35%;
+            }
+            
+            .aPropos .comment .contenu .comment-droite{
+                height: 100%;
+                background: url('../img/formation/hero.gif');
+                background-size: 190%;
+                background-position: 50% 20%;
+            }
+            .aPropos .comment .contenu .comment-droite:hover{
+                background-size: 220%;
+                background-position: 60% 30%;
+            }
+
+                .aPropos .comment .contenu div .fond2{
+                    width: 90%;
+                    height: 96%;
+                    padding: 0 5% 4% 5%;
+                    background-color: rgba(255, 255, 255, 0.7);
+
+                }
+
+                .aPropos .comment .contenu div h3{
+                    width: 100%;
+                    text-align: center;
+                    color: orange;
+                }
+                .aPropos .comment .contenu div h3:hover{
+                    text-shadow: var(--textOmbreNoir);
+                }
+            .aPropos .comment .contenu div div .detail{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+                .aPropos .comment .contenu div div h4{
+                    width: 100%;
+                    margin: 0;
+                }
+
+    /* Témoignage */
+    .aPropos .temoignage{
+        width: 100%;
+        padding: 3% 0;
+        overflow: hidden;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    
+    }
+        .temoignage .contenu{
+            background-color: rgba(218, 212, 212, 0.096);
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }            
+            .nav-btn{
+                width: 3vw;
+                height: 100%;
+                background-color: transparent;
+                border: none;
+                padding: 0;
+                font-size: 3rem;
+                font-family: Arial;
+                text-align: center;
+                overflow: hidden;
+
+            }
+            .carousel{
+                width: 90%;
+                height: 70vh;
+                mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+                overflow: hidden;
+
+                display: flex;
+                align-items: center;
+            }
+
+            #nextBtn{
+                transform: rotateY(180deg);
+            }
+                .aPropos .temoignage .cartes{
+                    width: max-content;
+                    height: 90%;
+
+                    display: flex;
+                    align-items: center; 
+                    overflow: visible;
+                    transition: transform 1s ease-in-out    ;
+
+
+                }
+                    .aPropos .temoignage .cartes .temoin{
+                        width: 55vw !important;
+                        height: 90%;
+                        margin: 0% 21vh ; 
+                        padding: 0;
+                        border: none;
+                        border-radius: 50px;
+                        /* box-shadow: var(--boxOmbreNoir); */
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                        .aPropos .temoignage .cartes .temoin img{
+                            width: 280px;
+                            filter: grayscale(2);
+                            transition: filter 1.5s;
+                        }
+                        .aPropos .temoignage .cartes .temoin:hover img{
+                            filter: grayscale(0);
+                        }
+                        .aPropos .temoignage .cartes .temoin:hover .texte{
+                            box-shadow: var(--boxOmbreOrange);
+                        }
+                        .aPropos .temoignage .cartes .temoin .texte{
+                            width: 40%;
+                            height: 50%;
+                            padding: 2% 3%;
+                            margin-left: 3%;
+                            border: none;
+                            border-radius: 50px;
+                            box-shadow: var(--boxOmbreNoir);
+
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+
+                            transition: box-shadow 1.5s;
+
+                        }
+                            .aPropos .temoignage .cartes .temoin .texte .profil{
+                                width: 100%;
+                                padding: 6% 0;
+                                line-height: .5;
+
+                                display: flex;
+                                flex-direction: column;
+                                justify-content: flex-start;
+                                align-items: flex-start;
+                            }
+                                .aPropos .temoignage .cartes .temoin .texte .profil .nom{
+                                    width: 100%;
+                                    font-size: 1.8rem;
+                                    transition: text-shadow 1.5s;
+                                }
+                                .aPropos .temoignage .cartes .temoin:hover .texte .profil .nom, .aPropos .temoignage .cartes .temoin:hover .texte .profil .poste .entreprise{
+                                    text-shadow: var(--textOmbreOrange);
+                                }
+                                .aPropos .temoignage .cartes .temoin .texte .profil .poste .entreprise{
+                                    transition: text-shadow 1.5s;
+                                    line-height: 1.5;
+                                }
+                            .aPropos .temoignage .cartes .temoin .texte .texte-temoignage{
+                                font-size: 1rem;
+                                text-align: justify;
+                            }
+
+    /* Ils nous font confiance */
+    .aPropos .confiance {
+        width: 100%;
+        overflow: hidden; 
+        padding: 0 0 3% 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+        .aPropos .confiance .slider-container {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            mask-image: linear-gradient(to right, transparent, black 15%, black 85%, transparent);
+        }
+
+            .aPropos .confiance .slider-container .listeLogo {
+                display: flex;
+                width: max-content; 
+                gap: 50px; /* Espace entre les logos */
+                animation: slideAuto 100s linear infinite; 
+            }
+            .aPropos .confiance .slider-container .listeLogo:hover {
+                animation-play-state: paused;
+            }
+
+                .aPropos .confiance .slider-container .listeLogo  img {
+                    width: 300px; 
+                    height: auto;
+                    filter: grayscale(1);
+                    transition: filter 0.3s;
+                    flex-shrink: 0;
+                }
+                .aPropos .confiance .slider-container .listeLogo img:hover {
+                    filter: grayscale(0);
+                }
+
+
+
+
+/* Nos formations */
+.formation {
+    width: 92%;
+    padding: 0% 4% 3% 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+    .formation .contenu{
+        width: 100%;
+        padding: 3% 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+    .formation .contenu .plus{
+        transition: background 1.5s;
+    }
+    .formation .contenu .plus:hover{
+        color: white !important;
+    }
+        .formation .contenu .cartes{
+            width: 100%;
+            
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+            .formation .contenu .cartes .carte-repere{
+                background-color: transparent;
+                width: 300px;
+                height: 350px;
+                perspective: 1000px; /* Important pour l'effet 3D */
+                margin-bottom: 5%;
+            }
+                .formation .contenu .cartes .carte-repere .carte{
+                    position: relative;
+                    width: 100%;
+                    height: 100%;
+                    text-align: center;
+                    transition: transform 1s;
+                    transform-style: preserve-3d; /* Permet aux enfants d'exister en 3D */
+                }
+                .formation .contenu .cartes .carte-repere:hover .carte{
+                    transform: rotateY(180deg);
+                }   
+                    /* Carte */
+                    .formation .contenu .cartes .carte-repere .carte .devant, .deriere{
+                        position: absolute;
+                        width: 100%;
+                        height: 100%;
+                        -webkit-backface-visibility: hidden; 
+                        backface-visibility: hidden;/* Cache le dos de la face pendant la rotation */
+                        border-radius: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+                    }
+                    /* Face avant */
+                    .formation .contenu .cartes .carte-repere .carte .devant {
+                        width: 100%;
+                        height: 100%;      
+                        overflow: hidden;                  
+                        color: black;
+                        background-size: cover;
+                        background-position: center;
+                    }
+                        .formation .contenu .cartes .carte-repere .carte .devant h3{
+                            width: 100%;
+                            height: 100%;
+                            margin: 0;
+                            padding: 50%;
+                            background-color: rgba(255, 255, 255, 0.500);
+                            font-size: 1.8rem;
+                        }
+                    /* Face arrière */
+                    .formation .contenu .cartes .carte-repere .carte .deriere{
+                        background-color: #ff6b00; /* Votre couleur orange par exemple */
+                        color: white;
+                        transform: rotateY(180deg); /* Positionne cette face déjà retournée */
+                    }
+                        .formation .contenu .cartes .carte-repere .carte .deriere h2{
+                            text-shadow: var(--textOmbreNoir);
+                            color: white;
+                        }
+                        .formation .contenu .cartes .carte-repere .carte .deriere p{
+                            padding: 0 5%;
+                        }
+                        .formation .contenu .cartes .carte-repere .carte .deriere .detail{
+                            width: 25%;
+                            padding: 3% 0;
+                            border: none;
+                            border-radius: 5px;
+                            font-size: 1rem;
+                            font-weight: 500;
+                            transition: background .8s;
+                        }
+                        .formation .contenu .cartes .carte-repere .carte .deriere .detail:hover{
+                            border-radius: 8px;
+                            color: white !important;
+                        }
+                .formation .contenu .cartes .carte-repere .carte .deriere .detail:hover{
+                    border-radius: 8px;
+                    color: white !important;
+                }
+
+/* Nous contacter */
+.contact{
+    width: 92%;
+    height: auto;
+    padding: 0 4% 2% 4%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact .contenu{
+    width: 60%;
+    padding: 3%;
+    margin: 3%;
+    box-shadow: var(--boxOmbreOrange);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact .contenu .message{
+    width: 92%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+.contact .contenu .message .groupe{
+    width: 100%;
+    margin: 3% 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+.contact .contenu .message .groupe label{
+    font-size: 1.6rem;
+    margin-bottom: 1%;
+}
+.contact .contenu .message .haut{
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.contact .contenu .message .haut input{
+    width: 90%;
+    height: 40px;
+    border-radius: 10px;
+
+    padding-left: 4%;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman';
+    outline: none;
+}
+
+.contact .contenu .message textarea{
+    width: 94%;
+    height: 150px;
+    border-radius: 10px;
+    padding: 2%;
+    font-size: 1.1rem;
+    font-family: 'Times New Roman';
+    outline: none;
+}
+
+.contact .contenu .message .haut input:focus, .contact .contenu .message textarea:focus {
+    border: 2px solid;
+    border-color: orange;
+}

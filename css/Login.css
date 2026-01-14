@@ -1,0 +1,172 @@
+*{
+    font-family: '[z] Arista Light';
+}
+
+.affiche{
+    display: flex !important;
+}
+.cache{
+    display: none;
+}
+#fond{
+    width: 100%;
+    height: 100vh;
+
+    position: fixed;
+    z-index: 999 !important;
+    background-color: rgba(255, 255, 255, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* Section Hero */
+
+#fond .seConnecter {
+    position: relative;
+    overflow: hidden;
+    width: 60%;
+    padding: 4% 0;
+    background: url('../img/formation/hero.gif'); /* Image de remplacement */
+    background-size: cover;
+    background-position: center;
+    border-radius: 50px;
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+}
+    #fond .seConnecter .masque {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6); /* Effet sombre de l'image */
+    }
+    #fond .seConnecter .contenu {
+        position: relative;
+        width: 85%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+        #fond .seConnecter .contenu .gauche {
+            width: 45%;
+            color: white;
+        }
+        #fond .reverse{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-end;
+        }
+            #fond .seConnecter .contenu .gauche h1 {
+                width: 100%;
+                font-size: 2.7rem;
+                font-weight: 500;
+                margin-top: 0;
+                margin-bottom: 3%;
+            }
+            #fond .seConnecter .contenu .gauche p {
+                width: 100%;
+                font-size: 1.2rem;
+                font-weight: 300;
+                line-height: 1.3;
+                color: rgba(255, 255, 255, 0.7);
+            }
+            #fond .seConnecter .contenu .gauche .btn-inscription {
+                background-color: orange;
+                font-size: 1.2rem;
+                color: white;
+                padding: 4% 8%;
+                border-radius: 30px;
+                text-decoration: none;
+                display: inline-block;
+                transition: background-color 1.2s;
+            }
+            #fond .seConnecter .contenu .btn-inscription:hover {
+                background-color: rgb(205, 133, 0);
+                color: white !important;
+                font-weight: 500;
+
+            }
+
+    #fond .seConnecter .contenu .droite {
+        width: 40%;
+        background: white;
+        padding: 5%;
+        border-radius: 8px;
+        box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    }
+
+        #fond .seConnecter .contenu .droite h2 {
+            margin-bottom: 7%;
+            color: #333;
+            font-size: 1.5rem;
+            text-align: left;
+            font-weight: 400;
+        }
+        #fond .seConnecter .contenu .droite h2:hover {
+            text-shadow: none;
+        }
+            #fond .seConnecter .contenu .droite form select {
+                width: 100%;
+                padding: 3% 3% 3% 3%;
+                margin-bottom: 5%;
+                border: 1px solid #ddd;
+                border-radius: 5px;
+                font-size: 1rem;
+            }
+            #fond .seConnecter .contenu .droite form .groupe {
+                margin-bottom: 5%;
+            }
+
+                #fond .seConnecter .contenu .droite form .groupe input {
+                    width: 94%;
+                    padding: 3%;
+                    border: 1px solid #ddd;
+                    border-radius: 5px;
+                    font-size: 1rem;
+                    outline: none;
+                }
+
+                #fond .seConnecter .contenu .droite form .groupe input :focus {
+                    border-color: orange;
+                }
+
+            #fond .seConnecter .contenu .droite form .bouton{
+                width: 100%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+                #fond .seConnecter .contenu .droite form .bouton button {
+                    width: 40%;
+                    background-color: orange;
+                    color: white;
+                    border: none;
+                    padding: 4% 2%;
+                    border-radius: 25px;
+                    font-size: 1rem;
+                    font-weight: 500;
+                    cursor: pointer;
+                    transition: background-color 1.2s;
+                }
+
+                #fond .seConnecter .contenu .droite form .bouton .btn-seConnecter:hover {
+                    background-color: rgb(173, 113, 0);
+                }
+
+                #fond .seConnecter .contenu .droite form .bouton a{
+                    color: black;
+                    font-size: .8rem;
+                    text-align: right;
+                    transition: text-shadow 1s;
+                }
+                #fond .seConnecter .contenu .droite form .bouton a:hover{
+                    font-weight: 400;
+                    text-shadow: 1px 1px 2px orange;
+                    color: black !important;
+                }
