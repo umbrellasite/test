@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Platforme de formation en ligne qui valorise vos compétences">
+    <meta name="author" content="Skill Hub">
+    <meta name="keywords" content="Formation, Informatique, IT, Developpement Web, HTML5, CSS3, JS, JQUERY, PAO, PHOTOSHOP,ILLUSTRATOR, INDESIGN, WEB-DESIGN">
+    <link rel="icon" type="image/png" sizes="80x80" href="img/icon-logo.png">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formation.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/Login.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <!-- Fenêtre modal -->
+ 
+<div id="fond">
+    <div id="modalConnexion" class="seConnecter">
+       <div class="masque"></div>
+        <div class="contenu">
+             <div class="gauche">
+                <h1>Skill Hub</h1>
+                <p>La platforme de formation Skill Hub vous souhaite de passer des formation agréable de vous revoir. <span class="court"> Si vous êtes nouveau, cliquer sur le bouton s'inscrire en bas.</span></p>
+                <a href="#" id="inscription" class="btn-inscription">S'inscrire</a>
+            </div>
+
+            <div class="droite">
+                <h2>Bienvenue sur votre espace.</h2>
+                <form>
+                    <select name="liste" id="liste">
+                        <option value="Etudiant">Etudiant</option>
+                        <option value="Formateur">Formateur</option>
+                    </select>
+                    <div class="groupe">
+                        <input type="email" placeholder="votre_email@domaine.com" required>
+                    </div>
+                    <div class="groupe">
+                        <input type="password" placeholder="Saisir mot de passe" required>
+                    </div>
+                    <div class="bouton">
+                        <button type="submit" class="btn-seConnecter">Connexion</button>
+                        <a href="">mot de passe oublié?</a>    
+                    </div>
+                    
+                </form>
+            </div>
+        </div> 
+    </div>
+    <div id="modalInscription" class="seConnecter">
+       <div class="masque"></div>
+        <div class="contenu">
+            <div class="droite">
+                <h2>Bienvenue sur votre espace.</h2>
+                <form>
+                    <select name="lista" id="lista">
+                        <option value="Etudiant">Etudiant</option>
+                        <option value="Formateur">Formateur</option>
+                    </select>
+                    <div class="groupe">
+                        <input type="text" placeholder="votre nom complet" required>
+                    </div>
+                    <div class="groupe">
+                        <input type="email" placeholder="votre_email@domaine.com" required>
+                    </div>
+                    <div class="groupe">
+                        <input type="password" placeholder="Saisir mot de passe" required>
+                    </div>
+                    <div class="groupe">
+                        <input type="password" placeholder="Confirmer mot de passe" required>
+                    </div>
+                    <div class="bouton">
+                        <button type="submit" class="btn-seConnecter">S'inscrire</button>   
+                    </div>
+                    
+                </form>
+            </div>
+
+             <div class="gauche     ">
+                <h1>Skill Hub</h1>
+                <p>La platforme de formation Skill Hub vous souhaite de passer des formation agréable de vous revoir. <span class="court"> Si vous avez déjà un compte, cliquer sur le bouton se connecter en bas.</span></p>
+                <a href="#" id="connexion" class="btn-inscription">Se connecter</a>
+            </div>            
+        </div> 
+    </div>
+</div>
+    
+    <!-- fin Fenêtre modal -->
+    <header id="header">
+        <img class="logo" src="img/Logo.png" alt="Logo de Skill Hub">
+        <div class="header-boutton">
+            <nav class="navigation" id="navigation">
+                <a href="#">Accueil</a>
+                <a href="Accueil.html#aPropos">A propos</a>
+                <a href="Formation.html">Formations</a>
+                <a href="Contact.html">Contact</a>
+            </nav>   
+            <button class="btn-deux" id="seConnecter" >Se connecter</button>
+            <img id="utilisateur" src="img/icon/users.png" alt="Icone utilisateur">        
+        </div>
+       
+            <div class="burger" id="burger">
+                <span class="barre"></span>
+                <span class="barre"></span>
+                <span class="barre"></span>
+            </div>  
+    </header>
+
+
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-gauche">
+            <h1>Transformer votre savoir avec <span class="texte-logo">Skill Hub</span> la platforme de formation en ligne <span class="hero-texte-cache">qui valorise vos compétences</span></h1>
+            <div id="recherche">
+                <input type="text" placeholder="Photoshop, Illustrator, Developpement web, Réseaux informatique, Montage vidéo,...">
+                <input type="button" value="🔍">
+            </div>
+        </div>
+        <div class="hero-droite">
+            <div class="image"></div>
+        </div>
+
+    </section>
+    <!-- Fin Hero -->
+
+    <!-- A propos -->
+    <section id="aPropos" class="aPropos">
+        <h2>A propos</h2>
+        <!-- C'est quoi SkillHub -->
+        <div class="contenu">
+            <div class="aPropos-gauche">
+            </div>
+            
+            <div class="aPropos-droite">
+                <h3>
+                    <span class="txt-rotate" 
+                        data-period="3000" 
+                        data-rotate='[ "C&apos;est quoi SkillHub?", "Quel est notre mission?", "Quels sont nos atouts?"]'>
+                    </span>
+                </h3>
+                <p><span class="texte-logo">SkillHub</span> est le point de rencontre entre l’ambition technologique et l’expertise partagée. Notre mission est simple : démocratiser l'accès aux compétences IT de haut niveau et permettre aux experts de transmettre leur savoir.  Dans un secteur en constante mutation, nous connectons deux forces vives : <br>
+                - <span class="type-personne">Les Apprenants : </span> Qui accèdent à des formations de pointe (IA, Cyber, Dev, Cloud) centrées sur la pratique et l'employabilité. <br>
+                - <span class="type-personne">Les Experts : </span>Qui transforment leur expérience en opportunités en devenant formateurs sur notre plateforme</p>
+                <div class="statistique">
+                    <div class="boite">
+                        <p>30+</p>
+                        <p>Formateur</p>
+                    </div>
+                    <div class="boite">
+                        <p>5+</p>
+                        <p>Ans exp</p>
+                    </div>
+                    <div class="boite">
+                        <p>200+</p>
+                        <p>Formés</p>
+                    </div>
+                </div>
+            </div>            
+        </div>
+        <!-- Objectifs  -->
+        <div class="objectif">
+            <h2>Nos Objectifs</h2>
+            <div class="contenu">
+                <div class="objectifs">
+                    <span class="nombre">1</span>
+                    <p  class="cache-resume">Une Excellence Opérationnelle <br>
+                        (Côté Apprenants)<br>
+                        Objectif : Garantir une employabilité immédiate pour tous.</p>
+                    <p class="affiche-objectif">Réduire le fossé entre la théorie académique et les besoins réels des entreprises en proposant des formations 100% pratiques, mises à jour en temps réel selon les évolutions du marché de l'IT.</p>
+                </div>
+                <div class="objectifs">
+                    <span class="nombre">2</span>
+                    <p  class="cache-resume">La Valorisation de l'Expertise <br>
+                        (Côté Formateurs)<br>
+                        Objectif : Créer la plus grande communauté de mentors IT.</p>
+                    <p class="affiche-objectif">Offrir aux experts du secteur une infrastructure technologique et pédagogique de premier plan pour transformer leur savoir-faire en programmes d'apprentissage et monétiser durablement leur expérience.</p>
+                </div>
+                <div class="objectifs">
+                    <span class="nombre">3</span>
+                    <p class="cache-resume">L'Accessibilité et la Croissance <br>
+                        (Côté Plateforme)<br>
+                        Objectif : Rendre la technologie accessible à chaque talent.</p>
+                    <p class="affiche-objectif">Devenir la référence pour la montée en compétences numérique, en rendant l'apprentissage de l'IA et du Développement accessible partout, pour quiconque souhaite réinventer son avenir professionnel.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Comment faire? -->
+        <div class="comment">
+            <h2>Comment faire?</h2>
+            <div class="contenu">
+                <div class="comment-gauche">
+                    <div class="fond2">
+                        <h3>S'inctire à une formation</h3>
+                        <div class="detail">
+                            <h4>Voici les étapes à suivres:</h4>
+                            <ol>
+                                <li>Si vous êtes nouveau, s'inscrire d'abord.</li>
+                                <li>Cliquer sur Formations dans la barre de navigation ou sur le bouton Listes des cours en bas.</li>
+                                <li>Choisir un cours.</li>
+                                <li>Faire une réséravation pour votre place.</li>
+                            </ol>
+                            <button class="btn-un">Listes des cours</button>
+                        </div>
+                    </div> 
+                </div>
+                <div class="comment-droite">
+                    <div class="fond2">
+                        <h3>Devenir Formateur </h3>
+                        <div class="detail">
+                            <h4>Voici les étapes à suivres:</h4>
+                            <ol>
+                                <li>Cliquer sur le boutton seconnecter dans la barre de navigation ou sur le bouton Postuler en bas.</li>
+                                <li>Remplir tout les champs important.</li>
+                                <li>Attendre l'email de validation.</li>
+                                <li>Se reconnecter.</li>
+                            </ol>
+                            <button class="btn-un">Postuler</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- Témoignage -->
+        <div class="temoignage">
+            <h2>Témoingage</h2>
+            <div class="contenu">
+                <button class="nav-btn" id="prevBtn">く</button>
+                <div class="carousel">
+                    <div class="cartes">
+                        <div class="temoin">
+                            <img src="img/utilisateur/Steeven.png" alt="Photo de ">
+                            <div class="texte">
+                                <div class="profil">
+                                    <span class="nom">Steeven</span> <br>
+                                    <span class="poste">Testeur QA chez <span class="entreprise"> Pulse</span></span>
+                                </div>
+                                <div class="texte-temoignage">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus quod ducimus ipsa rem ea, fuga alias, veniam, culpa nesciunt reiciendis dolorum nihil nulla deserunt. Quidem eos commodi minima. Rerum, fugiat!
+                                </div>                        
+                            </div>
+                        </div>
+                        <div class="temoin">
+                            <img src="img/utilisateur/Tahiry.png" alt="Photo de ">
+                            <div class="texte">
+                                <div class="profil">
+                                    <span class="nom">Tahiry</span> <br>
+                                    <span class="poste">Developpeur Fullstack chez <span class="entreprise">Accenture</span></span>
+                                </div>
+                                <div class="texte-temoignage">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus quod ducimus ipsa rem ea, fuga alias, veniam, culpa nesciunt reiciendis dolorum nihil nulla deserunt. Quidem eos commodi minima. Rerum, fugiat!
+                                </div>                        
+                            </div>
+                        </div>
+                        <div class="temoin">
+                            <img src="img/utilisateur/Olivia.png" alt="Photo de ">
+                            <div class="texte">
+                                <div class="profil">
+                                    <span class="nom">Olivia</span> <br>
+                                    <span class="poste">Responsable nettoyage chez <span class="entreprise">Novotel</span></span>
+                                </div>
+                                <div class="texte-temoignage">
+                                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellendus quod ducimus ipsa rem ea, fuga alias, veniam, culpa nesciunt reiciendis dolorum nihil nulla deserunt. Quidem eos commodi minima. Rerum, fugiat!
+                                </div>                        
+                            </div>
+                        </div>
+                    </div>        
+                </div>
+                <button class="nav-btn" id="nextBtn">く</button>    
+                
+            </div>
+           
+        </div>
+        <!-- Ils nous font confiance -->
+         <div class="confiance">
+            <h2>Ils nous font confiance</h2>
+            <div class="slider-container">
+                <div class="listeLogo">
+                    <img class="entLogo" src="img/logo/Agricom.jpg" alt="Logo de">
+                    <img class="entLogo" src="img/logo/Alpha.jpg" alt="Logo de">
+                    <img class="entLogo" src="img/logo/Ambatovy.jpg" alt="Logo de">
+                    <img class="entLogo" src="img/logo/yoplait.png" alt="Logo de">
+                    <img class="entLogo" src="img/logo/Beton.jpg" alt="Logo de">             
+                    <img class="entLogo" src="img/logo/bfv.jpg" alt="Logo de">
+                    <img class="entLogo" src="img/logo/bongou.jpg" alt="Logo de">
+                    <img class="entLogo" src="img/logo/codal.jpg" alt="Logo de">
+                    <img class="entLogo" src="img/logo/comacat.jpg" alt="Logo de">
+                    <img class="entLogo" src="img/logo/tropikaly.png" alt="Logo de">
+                    <img class="entLogo" src="img/logo/star1.jpg" alt="Logo de">
+                    <img class="entLogo" src="img/logo/dzama.jpg" alt="Logo de">
+                    <img class="entLogo" src="img/logo/savonnerie.jpg" alt="Logo de">
+                    <img class="entLogo" src="img/logo/europaint.jpg" alt="Logo de">
+                    <img class="entLogo" src="img/logo/europli.jpg" alt="Logo de">
+                    <img class="entLogo" src="img/logo/gamo.jpg" alt="Logo de">
+                    <img class="entLogo" src="img/logo/havamad.jpg" alt="Logo de">
+                    <img class="entLogo" src="img/logo/hazovato.png" alt="Logo de">
+                    <img class="entLogo" src="img/logo/holcim.jpg" alt="Logo de">
+                    <img class="entLogo" src="img/logo/vitogaz.jpg" alt="Logo de">
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- Fin A propos -->
+
+    <!-- Formation -->
+    <section id="formation" class="formation">
+        <h2>Listes des formations</h2>
+        <div class="contenu">
+            <div class="cartes">
+                <div class="carte-repere">
+                    <div class="carte">
+                        <div class="devant">
+                            <h3>WEB DESIGN</h3>   
+                        </div>
+                        <div class="deriere">
+                            <h2>Web Design</h2>
+                            <p>32 heures de formation</p>
+                            <p>Idéale si vous êtes passionné par le design pour des sites moderne</p>
+                            <a href="Detail.html" class="btn-trois detail">Détail</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="carte-repere">
+                    <div class="carte">
+                        <div class="devant">
+                            <h3>FRONT-END</h3>   
+                        </div>
+                        <div class="deriere">
+                            <h2>Front-End</h2>
+                            <p>40 heures de formation</p>
+                            <p>Idéale pour ceux qui veulent devenir intégrateur web ou developpeur Front-End</p>
+                            <a href="Detail.html" class="btn-trois detail">Détail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carte-repere">
+                    <div class="carte">
+                        <div class="devant">
+                            <h3>PAO</h3>   
+                        </div>
+                        <div class="deriere">
+                            <h2>PAO</h2>
+                            <p>28 heures de formation</p>
+                            <p>Idéale pour les concepteurs d'affiches, Flyers, carte de visite, roll-up et X-Banner</p>
+                            <a href="Detail.html" class="btn-trois detail">Détail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carte-repere">
+                    <div class="carte">
+                        <div class="devant ">
+                            <h3>BACK-END</h3>   
+                        </div>
+                        <div class="deriere">
+                            <h2>Back-End</h2>
+                            <p>40 heures de formation</p>
+                            <p>Idéale pour les personnes qui veulent se spécialiser sur les API et la base données</p>
+                            <a href="Detail.html" class="btn-trois detail">Détail</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <a href="Formation.html" class="plus btn-deux">voir plus</a>
+        </div>
+    </section>
+    <!-- Fin Formation -->
+
+    <!-- Nous contacter -->
+    <section id="contact" class="contact">
+        <h2>Nous contacter</h2>
+        <div class="contenu">
+            <div class="message">
+                <div class="haut">
+                    <div class="groupe">
+                        <label>Nom complet:</label>
+                        <input type="text" placeholder="Votre nom" name="nom">
+                    </div>
+                    <div class="groupe">
+                        <label>Email:</label>
+                        <input type="email" placeholder="votre-email@domaine.com" name="email">
+                    </div>
+                </div>
+                <div class="groupe">
+                    <label>Messages:</label>
+                    <textarea placeholder="Saisir votre message..." name="message"></textarea>
+                </div>
+                
+            </div>
+            <button class="btn-deux" type="submit">Envoyez</button>
+        </div>
+    </section>
+    <!-- Fin Nous contacter -->
+
+    <footer>
+        <div class="colonne">
+            <img class="logo" src="img/Logo.png" alt="Logo de Skill Hub">
+            <div class="social">
+                <a href=""><img src="img/icon/linkedin.png" alt="Logo de LinkedIn redirigant sur le profil de Skill Hub"></a>
+                <a href=""><img src="img/icon/facebook.png" alt="Logo de Facebook redirigant sur le profil de Skill Hub"></a>
+                <a href=""><img src="img/icon/instagram.png" alt="Logo de Instagram redirigant sur le profil de Skill Hub"></a>
+                <a href=""><img src="img/icon/youtube.png" alt="Logo de Youtube redirigant sur la chaîne de Skill Hub"></a>
+            </div>
+        </div>
+        <div class="colonne">
+            <h3>Lien utiles</h3>
+            <ul>
+                <li><a href="">Nous contactez</a></li>
+                <li><a href="">Listes des Formations</a></li>
+                <li><a href="">Devenir Formateur</a></li>
+                <li><a href="">Nous contactez</a></li>
+            </ul>
+        </div>
+        <div class="colonne">
+            <h3>Mentions légales</h3>
+            <ul>
+                <li><a href="">Confidentialités</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Besoin d'aide</a></li>
+            </ul>
+        </div>
+        <div class="colonne">
+            
+            <p>Copyright <span class="copyright">&copy; </span> 2026</p>
+            <p>Design fait par <a href="" class="auteur">Tahiry</a></p>
+        </div>
+    </footer>
+    
+<script src="js/animation.js"></script>
+<script src="js/carousel.js"></script>
+<script src="js/login.js"></script>
+<script src="js/textanimate.js"></script>
+</body>
+</html>
