@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Platforme de formation en ligne qui valorise vos compétences">
+    <meta name="author" content="Skill Hub">
+    <meta name="keywords" content="Formation, Informatique, IT, Developpement Web, HTML5, CSS3, JS, JQUERY, PAO, PHOTOSHOP,ILLUSTRATOR, INDESIGN, WEB-DESIGN">
+    <link rel="icon" type="image/png" sizes="80x80" href="img/icon-logo.png">
+    <title>Nos formations</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/formation.css">
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <header>
+        <img class="logo" src="img/Logo.png" alt="Logo de Skill Hub">
+        <div class="header-boutton">
+            <nav class="navigation" id="navigation">
+                <a href="Accueil.html">Accueil</a>
+                <a href="Accueil.html#aPropos">A propos</a>
+                <a href="#">Formations</a>
+                <a href="Contact.html">Contact</a>
+            </nav>   
+            <button class="btn-deux" id="seconnecter">Se connecter</button>
+        </div>
+
+        <div class="burger" id="burger">
+            <span class="barre"></span>
+            <span class="barre"></span>
+            <span class="barre"></span>
+        </div>
+    </header>
+       <h2>Listes des formations</h2>        
+       <div class="recherches">
+            <div id="listeFiltres" class="filtres">
+                <span class="filtre">Tout</span>
+                <!-- <span class="filtre">Full-Stack</span>
+                <span class="filtre">Front-End</span>
+                <span class="filtre">Back-End</span> -->
+                <span class="filtre">HTML5</span>
+                <span class="filtre">CSS3</span>
+                <span class="filtre">Bootstrap 5</span>
+                <span class="filtre">Javascript</span>
+                <span class="filtre">Photoshop</span>
+                <span class="filtre">Illustrator</span>
+                <span class="filtre">Figma</span>
+                <span id="ajout" class="filtre">+</span>
+            </div>
+            <div id="recherche">
+                <input type="text" placeholder="Photoshop, Illustrator, Developpement web, Réseaux informatique, Montage vidéo,...">
+                <input type="button" value="🔍">
+            </div>
+        </div>
+        <div id="ajouter">
+            <div class="groupe">
+                <label>Saisir votre mot clés:</label>
+                <input id="ajoutFiltre" type="text" placeholder="Developpeur, Montage vidéo, PAO, ..." name="cle">
+                <button id="oks">OK</button>
+            </div>
+        </div>
+    <!-- Formation  -->
+    <section id="formation" class="formation">
+ 
+
+        <div class="contenu">
+            <div class="cartes">
+                <div class="carte-repere">
+                    <div class="carte">
+                        <div class="devant">
+                            <h3>WEB DESIGN</h3>   
+                        </div>
+                        <div class="deriere">
+                            <h2>Web Design</h2>
+                            <p>32 heures de formation</p>
+                            <p>Idéale si vous êtes passionné par le design pour des sites moderne</p>
+                            <a href="Detail.html" class="btn-trois detail">Détail</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="carte-repere">
+                    <div class="carte">
+                        <div class="devant">
+                            <h3>FRONT-END</h3>   
+                        </div>
+                        <div class="deriere">
+                            <h2>Front-End</h2>
+                            <p>40 heures de formation</p>
+                            <p>Idéale pour ceux qui veulent devenir intégrateur web ou developpeur Front-End</p>
+                            <a href="Detail.html" class="btn-trois detail">Détail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carte-repere">
+                    <div class="carte">
+                        <div class="devant">
+                            <h3>PAO</h3>   
+                        </div>
+                        <div class="deriere">
+                            <h2>PAO</h2>
+                            <p>28 heures de formation</p>
+                            <p>Idéale pour les concepteurs d'affiches, Flyers, carte de visite, roll-up et X-Banner</p>
+                            <a href="Detail.html" class="btn-trois detail">Détail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carte-repere">
+                    <div class="carte">
+                        <div class="devant ">
+                            <h3>BACK-END</h3>   
+                        </div>
+                        <div class="deriere">
+                            <h2>Back-End</h2>
+                            <p>40 heures de formation</p>
+                            <p>Idéale pour les personnes qui veulent se spécialiser sur les API et la base données</p>
+                            <a href="Detail.html" class="btn-trois detail">Détail</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carte-repere">
+                    <div class="carte">
+                        <div class="devant ">
+                            <h3>INTEGRATEUR</h3>   
+                        </div>
+                        <div class="deriere">
+                            <h2>Intégrateur Web</h2>
+                            <p>16 heures de formation</p>
+                            <p>Idéale pour les personnes qui on déja quelque base de HTML, CSS et du Web design</p>
+                            <a href="Detail.html" class="btn-trois detail">Détail</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="carte-repere">
+                    <div class="carte">
+                        <div class="devant ">
+                            <h3>FULL STACK</h3>   
+                        </div>
+                        <div class="deriere">
+                            <h2>Full-Stack</h2>
+                            <p>40 heures de formation</p>
+                            <p>Idéale pour les personnes qui veulent être capable de créer un site complet</p>
+                            <a href="Detail.html" class="btn-trois detail">Détail</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="carte-repere">
+                    <div class="carte">
+                        <div class="devant ">
+                            <h3>HTML & CSS</h3>   
+                        </div>
+                        <div class="deriere">
+                            <h2>HTML5 & CSS3</h2>
+                            <p>20 heures de formation</p>
+                            <p>Idéale pour les personnes qui commence a débuté en tant que developpeur web</p>
+                            <a href="Detail.html" class="btn-trois detail">Détail</a>
+                        </div>
+                    </div>
+                </div> 
+                <div class="carte-repere">
+                    <div class="carte">
+                        <div class="devant ">
+                            <h3>LOGO</h3>   
+                        </div>
+                        <div class="deriere">
+                            <h2>Création Logo</h2>
+                            <p>18 heures de formation</p>
+                            <p>Idéale pour les personnes qui aime la création de design, particulièrement les logos</p>
+                            <a href="Detail.html" class="btn-trois detail">Détail</a>
+                        </div>
+                    </div>
+                </div> 
+            </div>
+            <div class="listePage">
+                Page
+                <a class="active" href="">1</a>
+                <a href="">2</a>
+                <a href="">3</a>
+                <a href="">4</a>
+                <a href="">...</a>
+                <a href="">20</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="colonne">
+            <img class="logo" src="img/Logo.png" alt="Logo de Skill Hub">
+            <div class="social">
+                <a href=""><img src="img/icon/linkedin.png" alt="Logo de LinkedIn redirigant sur le profil de Skill Hub"></a>
+                <a href=""><img src="img/icon/facebook.png" alt="Logo de Facebook redirigant sur le profil de Skill Hub"></a>
+                <a href=""><img src="img/icon/instagram.png" alt="Logo de Instagram redirigant sur le profil de Skill Hub"></a>
+                <a href=""><img src="img/icon/youtube.png" alt="Logo de Youtube redirigant sur la chaîne de Skill Hub"></a>
+            </div>
+        </div>
+        <div class="colonne">
+            <h3>Lien utiles</h3>
+            <ul>
+                <li><a href="">Nous contactez</a></li>
+                <li><a href="">Listes des Formations</a></li>
+                <li><a href="">Devenir Formateur</a></li>
+                <li><a href="">Nous contactez</a></li>
+            </ul>
+        </div>
+        <div class="colonne">
+            <h3>Mentions légales</h3>
+            <ul>
+                <li><a href="">Confidentialités</a></li>
+                <li><a href="">Privacy</a></li>
+                <li><a href="">Besoin d'aide</a></li>
+            </ul>
+        </div>
+        <div class="colonne">
+            
+            <p>Copyright <span class="copyright">&copy; </span> 2026</p>
+            <p>Design fait par <a href="" class="auteur">Tahiry</a></p>
+        </div>
+    </footer>
+    
+<script src="js/animation.js"></script>
+<script src="js/login.js"></script>
+<script src="js/textanimate.js"></script>
+</body>
+</html>
